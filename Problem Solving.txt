@@ -1,0 +1,2 @@
+https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number,leetcode,arrays
+https://www.geeksforgeeks.org/problems/number-of-ways-to-arrive-at-destination/1,geeksforgeeks,graphs
