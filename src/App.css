@@ -1,37 +1,142 @@
-.sheet-content {
+.sheet-view {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  max-width: 900px;
+  gap: 20px;
+  padding-bottom: 20px;
+  animation: fadeIn 0.3s ease;
 }
 
-.sheet-content__header {
-  display: flex;
-  align-items: baseline;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.sheet-content__title {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin: 0;
-  letter-spacing: -0.02em;
-}
-
-.sheet-content__stats {
+/* ─── Difficulty summary pills row ─── */
+.difficulty-summary {
   display: flex;
   gap: 8px;
-  align-items: center;
+  flex-wrap: wrap;
+  animation: fadeSlideUp 0.4s ease both;
+  animation-delay: 80ms;
 }
 
-.stat-chip {
+.diff-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border-radius: 20px;
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
-  font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.diff-pill:hover {
+  transform: translateY(-2px);
+}
+
+.diff-pill__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.diff-pill--easy {
+  background: var(--easy-bg);
+  color: var(--easy-color);
+  border: 1px solid var(--easy-border);
+}
+.diff-pill__dot--easy { background: var(--easy-color); }
+
+.diff-pill--medium {
+  background: var(--medium-bg);
+  color: var(--medium-color);
+  border: 1px solid var(--medium-border);
+}
+.diff-pill__dot--medium { background: var(--medium-color); }
+
+.diff-pill--hard {
+  background: var(--hard-bg);
+  color: var(--hard-color);
+  border: 1px solid var(--hard-border);
+}
+.diff-pill__dot--hard { background: var(--hard-color); }
+
+/* ─── Quote ─── */
+.quote-banner {
+  position: relative;
+  padding: 18px 22px 18px 38px;
+  border-radius: 14px;
+  background: var(--quote-bg);
+  border: 1px solid var(--quote-border);
+  overflow: hidden;
+  animation: fadeSlideUp 0.5s ease both;
+  animation-delay: 140ms;
+  flex-shrink: 0;
+}
+
+.quote-banner__mark {
+  position: absolute;
+  top: 2px;
+  left: 12px;
+  font-family: 'Syne', 'Space Grotesk', serif;
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--accent);
+  opacity: 0.12;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.quote-banner__text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.quote-banner__author {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+  font-style: normal;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+}
+
+/* ─── Topics section ─── */
+.topics-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: fadeSlideUp 0.5s ease both;
+  animation-delay: 200ms;
+}
+
+.topics-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2px;
+}
+
+.topics-section__label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.topics-section__count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 6px;
   background: var(--surface-2);
   color: var(--text-muted);
   border: 1px solid var(--border);
@@ -40,5 +145,26 @@
 .topic-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
+}
+
+/* ─── Footer ─── */
+.site-footer {
+  padding: 20px 0 4px;
+  text-align: center;
+}
+
+.site-footer span {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.03em;
+}
+
+/* ─── Mobile ─── */
+@media (max-width: 768px) {
+  .sheet-view { gap: 14px; }
+  .quote-banner { padding: 14px 16px 14px 32px; }
+  .quote-banner__mark { font-size: 38px; left: 8px; }
+  .quote-banner__text { font-size: 12.5px; }
 }

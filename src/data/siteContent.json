@@ -1,0 +1,42 @@
+{
+  "site": {
+    "name": "Pritam's DSA Sheet",
+    "tagline": "Master algorithms, one problem at a time.",
+    "description": "A curated collection of DSA problems organized by topic and difficulty.",
+    "author": "Pritam Acharya",
+    "github": "https://github.com/IamPritamAcharya/Pritam-s-DSA-Sheet"
+  },
+  "navLinks": [
+    { "label": "Problems", "href": "#problems", "active": true },
+    { "label": "GitHub", "href": "https://github.com/IamPritamAcharya/Pritam-s-DSA-Sheet", "external": true }
+  ],
+  "quotes": [
+    { "text": "First, solve the problem. Then, write the code.", "author": "John Johnson" },
+    { "text": "The best time to plant a tree was 20 years ago. The second best time is now.", "author": "Chinese Proverb" },
+    { "text": "Talk is cheap. Show me the code.", "author": "Linus Torvalds" },
+    { "text": "It's not a bug — it's an undocumented feature.", "author": "Anonymous" },
+    { "text": "Code is like humor. When you have to explain it, it's bad.", "author": "Cory House" },
+    { "text": "Simplicity is the soul of efficiency.", "author": "Austin Freeman" },
+    { "text": "Make it work, make it right, make it fast.", "author": "Kent Beck" },
+    { "text": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.", "author": "Martin Fowler" }
+  ],
+  "difficultyLabels": {
+    "easy": { "label": "Easy", "emoji": "🟢" },
+    "medium": { "label": "Medium", "emoji": "🟡" },
+    "hard": { "label": "Hard", "emoji": "🔴" }
+  },
+  "platformNames": {
+    "leetcode": "LeetCode",
+    "geeksforgeeks": "GeeksforGeeks",
+    "other": "External"
+  },
+  "features": [
+    { "icon": "⚡", "title": "Live Sync", "desc": "Problems fetched directly from GitHub" },
+    { "icon": "🎯", "title": "Organized", "desc": "Grouped by topic & difficulty level" },
+    { "icon": "🌙", "title": "Themes", "desc": "Comfortable dark & light modes" }
+  ],
+  "footer": {
+    "text": "Built with ❤️ by Pritam",
+    "year": 2025
+  }
+}
