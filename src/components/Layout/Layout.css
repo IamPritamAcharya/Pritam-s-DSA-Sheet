@@ -31,6 +31,9 @@
   overflow: hidden;
   position: relative;
   z-index: 1;
+  width: 100%;
+  gap: 20px;
+  padding: 0 24px;
 }
 
 /* ─── Main ─── */
@@ -38,7 +41,7 @@
   flex: 1;
   overflow-y: scroll;
   overflow-x: hidden;
-  padding: 32px 36px 80px;
+  padding: 0 36px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,6 +56,16 @@
   display: none;               /* Chrome/Safari */
 }
 
+.layout__spacer-top {
+  flex-shrink: 0;
+  height: 104px; /* 64px header + spacing */
+}
+
+.layout__spacer-bottom {
+  flex-shrink: 0;
+  height: 80px;
+}
+
 .layout__main-inner {
   width: 100%;
   max-width: 760px;
@@ -60,7 +73,7 @@
 
 /* ─── Right panel slot ─── */
 .layout__right {
-  width: 220px;
+  width: 360px;
   flex-shrink: 0;
   height: 100%;
   overflow-y: auto;
@@ -74,8 +87,17 @@
 }
 
 @media (max-width: 768px) {
+  .layout__body {
+    padding: 0;
+    gap: 0;
+  }
+
+  .layout__spacer-top {
+    display: none; /* Mobile handles this via fixed padding */
+  }
+
   .layout__main {
-    padding: 20px 14px 60px;
+    padding: 68px 14px 60px; /* 48px header + 20px padding */
   }
 
   .layout__right {
@@ -99,8 +121,4 @@
     opacity: 1;
     visibility: visible;
   }
-
-  .orb--1 { width: 180px; height: 180px; }
-  .orb--2 { width: 150px; height: 150px; }
-  .orb--3, .orb--4 { display: none; }
 }

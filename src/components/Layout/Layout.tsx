@@ -10,34 +10,25 @@ interface Props {
   onSelectSheet: (name: string) => void;
   totalProblems?: number;
   totalTopics?: number;
-  totalDone?: number;
   children: ReactNode;
   rightPanel?: ReactNode;
 }
 
 export function Layout({
   sheets, activeSheet, onSelectSheet,
-  totalProblems, totalTopics, totalDone,
+  totalProblems, totalTopics,
   children, rightPanel
 }: Props) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <div className="layout">
-      {/* CSS ambient background */}
-      <div className="orbs" aria-hidden="true">
-        <div className="orb orb--1" />
-        <div className="orb orb--2" />
-        <div className="orb orb--3" />
-        <div className="orb orb--4" />
-      </div>
 
       <Header
         onMenuClick={() => setSidebarOpen(prev => !prev)}
         sidebarOpen={sidebarOpen}
         totalProblems={totalProblems}
         totalTopics={totalTopics}
-        totalDone={totalDone}
       />
 
       <div className="layout__body">
@@ -57,7 +48,11 @@ export function Layout({
 
         {/* Main content */}
         <main className="layout__main">
+          {/* Spacer so content scrolls behind floating header smoothly */}
+          <div className="layout__spacer-top" />
           <div className="layout__main-inner">{children}</div>
+          {/* Spacer for bottom padding */}
+          <div className="layout__spacer-bottom" />
         </main>
 
         {/* Right progress panel (desktop only) */}

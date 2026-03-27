@@ -1,11 +1,13 @@
 .sidebar {
-  width: 230px;
+  width: 320px;
   flex-shrink: 0;
-  height: 100%;
+  height: calc(100% - 112px);
+  margin: 88px 0 24px;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  border-right: 1px solid var(--border);
+  border: 1px solid var(--border);
+  border-radius: 20px;
   background: var(--surface-glass);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -197,8 +199,12 @@
     left: 0; top: 0; bottom: 0;
     z-index: 160;
     width: 272px;
+    height: 100%;
+    margin: 0;
     transform: translateX(-100%);
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    border-radius: 0;
     border-right: 1px solid var(--border-hover);
     box-shadow: var(--shadow-lg);
     background: var(--surface-solid);

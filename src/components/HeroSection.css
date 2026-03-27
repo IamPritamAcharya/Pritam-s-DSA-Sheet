@@ -41,7 +41,7 @@
     transparent 60%
   );
   background-size: 200% 100%;
-  animation: shimmerSweep 2.5s ease-out 0.5s both;
+  animation: shimmerSweep 8s ease-out 0.5s infinite;
   pointer-events: none;
 }
 
