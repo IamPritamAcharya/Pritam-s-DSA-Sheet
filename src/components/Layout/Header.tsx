@@ -32,8 +32,8 @@ export function Header({ onMenuClick, sidebarOpen = false, totalProblems = 0, to
               <path d="M12 7L17 12L12 17L7 12Z" fill="rgba(0,0,0,0.22)" />
               <defs>
                 <linearGradient id="hLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#7c6af7" />
-                  <stop offset="100%" stopColor="#a855f7" />
+                  <stop offset="0%" stopColor="#58a6ff" />
+                  <stop offset="100%" stopColor="#79c0ff" />
                 </linearGradient>
               </defs>
             </svg>

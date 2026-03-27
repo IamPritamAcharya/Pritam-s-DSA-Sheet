@@ -29,11 +29,11 @@ export function ThreeCanvas() {
     const velocities: number[] = [];
 
     const palette = [
-      new THREE.Color(0x7c6af7),
-      new THREE.Color(0xa855f7),
-      new THREE.Color(0x34d399),
-      new THREE.Color(0x6366f1),
-      new THREE.Color(0xec4899),
+      new THREE.Color(0x58a6ff), // GitHub blue
+      new THREE.Color(0x79c0ff), // GitHub light blue
+      new THREE.Color(0x3fb950), // GitHub green
+      new THREE.Color(0x8b949e), // GitHub gray
+      new THREE.Color(0xd29922), // GitHub yellow
     ];
 
     for (let i = 0; i < COUNT; i++) {
@@ -85,14 +85,14 @@ export function ThreeCanvas() {
     // ─── Wireframe torus knots ───
     const torus1 = new THREE.Mesh(
       new THREE.TorusKnotGeometry(1.8, 0.4, 140, 18, 2, 3),
-      new THREE.MeshBasicMaterial({ color: 0x7c6af7, wireframe: true, transparent: true, opacity: 0.045 })
+      new THREE.MeshBasicMaterial({ color: 0x58a6ff, wireframe: true, transparent: true, opacity: 0.045 })
     );
     torus1.position.set(3.5, -0.5, -2);
     scene.add(torus1);
 
     const torus2 = new THREE.Mesh(
       new THREE.TorusKnotGeometry(1.2, 0.3, 100, 14, 3, 5),
-      new THREE.MeshBasicMaterial({ color: 0x34d399, wireframe: true, transparent: true, opacity: 0.035 })
+      new THREE.MeshBasicMaterial({ color: 0x3fb950, wireframe: true, transparent: true, opacity: 0.035 })
     );
     torus2.position.set(-4, 1.5, -3);
     scene.add(torus2);
@@ -100,7 +100,7 @@ export function ThreeCanvas() {
     // Icosahedron — new element
     const icoMesh = new THREE.Mesh(
       new THREE.IcosahedronGeometry(1.0, 1),
-      new THREE.MeshBasicMaterial({ color: 0xa855f7, wireframe: true, transparent: true, opacity: 0.05 })
+      new THREE.MeshBasicMaterial({ color: 0x79c0ff, wireframe: true, transparent: true, opacity: 0.05 })
     );
     icoMesh.position.set(-2.5, -1.5, -1.5);
     scene.add(icoMesh);
