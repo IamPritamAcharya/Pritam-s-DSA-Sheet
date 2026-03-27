@@ -2,3 +2,4 @@ https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-numb
 https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts,arrays,easy
 https://www.geeksforgeeks.org/problems/number-of-ways-to-arrive-at-destination/1,graphs,medium
 https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/,arrays,easy
+https://leetcode.com/problems/build-an-array-with-stack-operations,stacks,medium
