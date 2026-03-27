@@ -105,7 +105,6 @@ function AppContent() {
         onSelectSheet={setActiveSheet}
         totalProblems={totalProblems}
         totalTopics={totalTopics}
-        totalDone={totalDone}
         rightPanel={rightPanel}
       >
         {renderMain()}
