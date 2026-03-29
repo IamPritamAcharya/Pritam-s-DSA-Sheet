@@ -5,3 +5,4 @@ https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/,arrays,e
 https://leetcode.com/problems/build-an-array-with-stack-operations,stacks,medium
 https://leetcode.com/problems/number-of-students-unable-to-eat-lunch,arrays,easy
 https://leetcode.com/problems/time-needed-to-buy-tickets,arrays,easy
+https://leetcode.com/problems/construct-target-array-with-multiple-sums,Heap,Very Hard
