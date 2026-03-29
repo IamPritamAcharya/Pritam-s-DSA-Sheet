@@ -7,3 +7,4 @@ https://leetcode.com/problems/number-of-students-unable-to-eat-lunch,arrays,easy
 https://leetcode.com/problems/time-needed-to-buy-tickets,arrays,easy
 https://leetcode.com/problems/construct-target-array-with-multiple-sums,heaps,hard
 https://leetcode.com/problems/detect-capital,strings,easy
+https://leetcode.com/problems/repeated-substring-pattern,strings,easy
