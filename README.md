@@ -13,7 +13,7 @@ A high-performance Data Structures and Algorithms (DSA) problem tracker designed
 ## Live Application
 
 **Deployed URL:**
-[https://iampritamacharya.github.io/Pritam-s-DSA-Sheet/](https://iampritamacharya.github.io/Pritam-s-DSA-Sheet/)
+[https://iampritamacharya.github.io/Pritam-s-DSA-Sheet/](https://iampritamacharya.github.io/SolveStack/)
 
 ---
 
