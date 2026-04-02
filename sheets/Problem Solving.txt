@@ -10,3 +10,4 @@ https://leetcode.com/problems/detect-capital,strings,easy
 https://leetcode.com/problems/repeated-substring-pattern,strings,easy
 https://leetcode.com/problems/odd-even-linked-list,linkedlists,medium
 https://leetcode.com/problems/sum-of-square-numbers,two pointers,easy
+https://leetcode.com/problems/magical-string,two pointers,medium
